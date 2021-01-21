@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/favicon.png"/>
+    <title>Portafolio: Arquitectura del Computador</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Portafolio: Arquitectura del computador</h1>
+    </header>
+    <nav>
+        <a href="../">Inicio</a>
+        <a href="../introduccion/">Introducción</a>
+        <a href="../aprendizaje/">Aprendizajes</a>
+        <a href="../dudas/">Dudas</a>
+        <a href="../conclusion/">Conclusión</a>
+    </nav> 
+    <main>
+        <article>
+            <div>
+                <h2>Sistemas numéricos y Tipos de Códigos</h2>
+                <h3>Sistemas numéricos</h3>
+                <p>Primero empecemos con lo básico. Una computadora conoce su desarrollo gracias al campo de las matemáticas, en este caso el campo discreto nos ha otorgado el lenguaje que permite manipular los datos y automatizar procesos. En este caso, es la implementación de un sistema numérico</p>
+                <p>Un sistema numérico es una composición de símbolos y reglas de generación que, gracias a estos, podemos representar todos los números.</p>
+                <p>Teóricamente hay infinitos sistemas numéricos, pero algunos destacados por su empleo en distintas áreas tenemos el Decimal (Base-10), Binario (Base-2), Hexadecimal (Base-16) u Octal (Base-8).</p>
+                <p>Los sistemas numéricos surgen casi a la par con la sedentarización de la humanidad, es decir, aquello que permitió formar las primeras civilizaciones. Uno de los primeros sistemas numéricos que se conocen es el babilónico o sumerio, un sistema posicional (en el que el orden de aparición del símbolo utilizado para numerar es importante para determinar cantidad), de base 60 (que tenían 60 símbolos diferentes para determinar la cantidad).</p>
+                <p>Resultan, evidentemente, de una necesidad. Al volverse la humanidad sedentaria, ha comenzado a tener nuevas necesidades que le permitieran hacer sus labores más sencillas. La parametrización de las posesiones, por dar un ejemplo, habría sido imposible sin una invención abstracta como lo es un sistema numérico. Así, el hombre sedentario ha podido determinar la cantidad de cultivo cosechado, por ejemplo. En general, nuevas invenciones y construcciones abstraídas de la realidad (como me gusta más llamar a los sistemas numéricos) son fabricadas en vista de una necesidad.</p>
+                <p>Es importante saber convertir bases numéricas. Poder calcular correctamente sus correspondientes equivalencias. Una conversión común es la Decimal-Binaria.</p>
+                <img src="../img/ConversionDecimalBinario.png" alt="computador" width="332" height="250">
+                <h3>Tipos de Códigos</h3>
+                <p>El computador hace uso de la codificación para poder conocer el concepto mismo de dato. Algunos ejemplos destacables tenemos:</p>
+                <h4>BCD</h4>
+                <p>Es una clase de codificación binaria de números decimales donde cada dígito es representado por una cantidad fija de bits, usualmente cuatro u ocho. En ocasiones, son utilizados patrones de bits especiales para denotar el signo u otras indicaciones como un error o un overflow.</p>
+                <p>Para representar cualquier número en BCD, hay que convertir cada dígito en el cuarteto de bits que representa en la codificación. Por ejemplo: 4358 se representaría así: 0100 0011 0101 1000</p>
+                <h4>Exceso 3</h4>
+                <p>Es una codificación derivada de BCD autocomplementaria que ha sido utilizada en ocasiones en reemplazo de BCD por su conveniencia. El código de Exceso 3 se consigue igual que como el BCD, pero cada dígito debe sumarse 3 para poder conseguir el número correspondiente. </p>
+                <p>Por ejemplo: En el número 4358, se suma 3 a cada dígito y convertimos cada dígito a binario: 0111 0110 1000 1011</p>
+                <h4>Gray</h4>
+                <p>Es un sistema de codificación binario en el que dos números consecutivos difieren en uno de sus dígitos. Si por ejemplo tenemos el número 0000 y 0001, el siguiente número no puede ser 0010, porque este difiere en dos dígitos con respecto al número 0001, por lo que se dice que el siguiente número es 0011, que sólo modifica un dígito.</p>
+                <h4>ASCII</h4>
+                <p>Es un código de caracteres que otorga un número (normalmente binario, al tratarse de una codificación usada en computación) a un carácter en el alfabeto latino, específicamente los utilizados en el inglés moderno. Este usa 7 bits para representar cada uno de los caracteres hechos disponibles. Como la computación ha avanzado a ámbitos internacionales, resultaba necesaria la ampliación del sistema de codificación para dar cabida a otros idiomas, y por ello se extendieron las capacidades del ASCII siendo retrocompatible con esta. Esta ampliación es lo que conocemos como ASCII Extendido.</p>
+            </div>
+            <div>
+                <img src="../img/codigo_binario_computadoras.jpg" alt="computador" width="400" height="250">
+                <img class="img-gal" src="../img/Código-Hexadecimal.png" alt="computador" width="400" height="250">
+                <img class="img-gal" src="../img/361px-USASCII_code_chart.png" alt="computador" width="400" height="250">
+                <img class="img-gal" src="../img/creation.jpg" alt="computador" width="400" height="250">
+            </div>
+        </article>
+        <article>
+            <div>
+                <h2>Puertas lógicas y aritmética binaria</h2>
+                <h3>Puertas lógicas</h3>
+                <p>Estos dos principios son elementos esenciales para entender el funcionamiento del computador, pues es gracias a esto que se ha logrado desarrollar.</p>
+                <p>Existen varias compuertas lógicas que se detallarán a continuación:</p>
+                <h4>AND</h4>
+                <p>Este operador otorga resultado verdadero si ambos operandos evaluados son verdaderos.</p>
+                <h4>OR</h4>
+                <p>Este operador otorga resultado falso si ambos operandos evaluados son falsos.</p>
+                <h4>XOR</h4>
+                <p>Este operador otorga resultado verdadero si los operandos son diferentes.</p>
+                <h3>Aritmética binaria</h3>
+                <p>Las operaciones aritméticas pueden realizarse prácticamente en cualquier base, y resulta especialmente útil saber cómo operar sobre la base binaria. En este caso se mostrarán ejemplos de ejercicios resueltos de las operaciones binarias:
+                </p>
+                <img src="../img/SumaBinaria.png" alt="computador" width="255" height="149">
+                <img src="../img/RestaBinaria.png" alt="computador" width="212" height="122">
+                <img src="../img/MultBinaria.png" alt="computador" width="163" height="120">
+                <img src="../img/DivBinaria.png" alt="computador" width="327" height="250">
+            </div>
+            <div>
+                <img src="../img/puertas-logicas-1.jpeg" alt="computador" width="319" height="250">
+            </div>
+        </article>
+        <article>
+            <div>
+                <h2>La memoria</h2>
+                <p>Es el dispositivo que permite la retención, memorización o almacenamiento de los datos durante un período determinado de tiempo.</p>
+                <p>La memoria es importante para garantizar la integridad de los datos, así como la ejecución de programas que necesitan datos en lo largo de su ejecución.</p>
+                <h3>Memoria principal</h3>
+                <p>Es aquella memoria en la que se almacenan los programas que se están ejecutando junto con sus datos. La memoria RAM es la memoria principal característica de la computación moderna.</p>
+                <h3>Memoria secundaria</h3>
+                <p>La memoria secundaria tiene la importante tarea de hacer de los datos permanentes. Es útil para guardar datos y poder utilizarlos y manipularlos en el tiempo. Ciertos sectores de la memoria secundaria funciona como soporte a la memoria primaria, en el caso extremo de resultar esta insuficiente en sus labores.</p>
+                <h3>Memoria intermediaria</h3>
+                <p>Podemos encontrarla como la caché de la CPU. Utilizada, valga la redundancia, como intermediaria entre la memoria principal y el procesador. Tomando en cuenta el ciclo del CPU, la data a utilizar inmediatamente en el ciclo se almacena en la memoria intermediaria, y tan pronto termina el ciclo la data es liberada.</p>
+                <h3>Memoria fuera de línea</h3>
+                <p>Es la memoria fácilmente extraíble. Podemos destacar unidades ópticas, disco duros externos o unidades USB.</p>
+                <h3>Memoria en línea</h3>
+                <p>La memoria en línea es aquella memoria que se accede desde una red informática. La más destacada es el almacenamiento asociado a red, en el que la data se guarda en un computador y otros computadores son capaces de acceder a esta. Ejemplo destacado de nuestros tiempos: la nube.</p>
+            </div>
+            <div>
+                <img src="../img/dispo.jpg" alt="computador" width="319" height="250">
+                <img class="img-gal" src="../img/SATA.png" alt="computador" width="319" height="250">
+            </div>
+        </article>
+        <article>
+            <div>
+                <h2>Nociones sobre la arquitectura del computador</h2>
+                <p>A veces se pregunta qué procesador es mejor, y como esa respuesta en parte de las necesidades que posea cada quien, daré mi apreciación personal al respecto:</p>
+                <p>Aquel que sea capaz de ejecutar la mayor cantidad de instrucciones, en el menor tiempo, con un cuidado en temas de consumo energético. En este sentido, siento que la serie Ryzen de procesadores AMD cumple fielmente con mis requerimientos.</p>
+                <p>En el caso de la motherboard, esta es importante porque no toda motherboardes compatible con todos los componentes del computador, por lo que miprioridad al escoger un motherboard es que primero sea compatible con todosmis componentes (con mi CPU, GPU o RAM escogidas, entre otros). Así,considero que no hay una marca específica que destaque especialmente por sobre las demás en ese sentido. No importa tanto si es Gigabyte, o MSI, o ASROCK. </p>
+                <p>También es importante, eso sí, la calidad de los componentes que incluye la motherboard, pero como este componente base se encuentra regido bajo unos estándares mucho más específicos que el procesador o la GPU, la diferencia de calidad no siempre significa una diferencia en rendimiento, aunque si en tiempo de vida.</p>
+                <p>En general, El mejor PC no necesariamente es el que sea más caro, sino el que se le pueda aprovechar más al menor precio. Seamos sinceros, a todo mundo le gustaría tener lo más puntero en tecnología. Sin embargo, hay que pensar cuánta potencia vamos a aprovechar en nuestras labores diarias. Así pues, considero que lo mejor es siempre conseguir un PC que posea la mejor calidad-precio. Porque considero excesivo gastar demasiado en algo que no se vaya a necesitar.</p>
+            </div>
+            <div>
+                <img src="../img/AMD.jpg" alt="computador" width="319" height="250">
+                <img class="img-gal" src="../img/513262-asus-ROG-STRIX-b550-E-gaming-motherboard-709x709.webp" alt="computador" width="319" height="250">
+                
+            </div>
+        </article>
+        <article>
+            <div>
+                <h2>Lenguaje ensamblador</h2>
+                <p>El lenguaje ensamblador es un lenguaje de programación de bajo nivel, que se adhiere a las nociones más internas del ciclo de un procesador</p>
+                <p>Algo tan sencillo como sumar 2 números puede resultar en una labor desafiante en ensamblador, pero si se domina se alcanza un gran poder.</p>
+                <code>
+                    <p>.model small</p>
+                    <p>.stack 100h</p>
+                    <p>.data</p>
+                    <p>message db "hello world$"</p>
+                    <p>.code</p>
+                    <p>mov ax,@data</p>
+                    <p>mov ds,ax</p>
+                    <p>mov ah,9</p>
+                    <p>mov dx,offset message</p>
+                    <p>int 21h</p>
+                    <p>mov ah,4ch</p>
+                    <p>int 21h</p>
+                    <p>end</p>
+                </code>
+                <p>El código expuesto aquí es un ejemplo de un programa escrito en ensamblador, que imprime "hello world" en la pantalla. A continuación su ejecución:</p>
+                <img src="../img/Ejecucion.png" alt="computador" width="645" height="427">
+                <code>
+                    <p>.model small</p>
+                    <p>.stack 100h</p>
+                    <p>.data</p>
+                    <p>str1 db 10,13,"Introduzca el primer numero: $"</p>
+                    <p>str2 db 10,13,"Introduzca el segundo numero: $"</p>
+                    <p>str3 db 10,13,"El resultado es: $"</p>
+                    <p>.code</p>
+                    <p>;Limpiar pantalla</p>
+                    <p>mov ax, 03h</p>
+                    <p>int 10h</p>
+                    <p>mov ax, @data</p>
+                    <p>mov ds, ax</p>
+                    <p>;Muestra str1 en la pantalla</p>
+                    <p> mov ah, 9</p>
+                    <p>mov dx, offset str1</p>
+                    <p>int 21h</p>
+                    <p>;Leer caracter</p>
+                    <p>mov ah,1</p>
+                    <p>int 21h</p>
+                    <p>mov bl, al</p>
+                    <p>;Muestra str2 en la pantalla</p>
+                    <p>mov ah, 9</p>
+                    <p>mov dx, offset str2</p>
+                    <p>int 21h</p>
+                    <p>;Leer caracter</p>
+                    <p>mov ah,1</p>
+                    <p>int 21h</p>
+                    <p>mov bh, al</p>
+                    <p>add bl, bh</p>
+                    <p>sub bl,48</p>
+                    <p>;Muestra str3 en la pantalla</p>
+                    <p>mov ah, 9</p>
+                    <p>mov dx, offset str3</p>
+                    <p>int 21h</p>
+                    <p>mov ah, 02</p>
+                    <p>mov dl, bl</p>
+                    <p>int 21h</p>
+                    <p>mov ah,4ch</p>
+                    <p>int 21h</p>
+                    <p>end</p>
+                </code>
+                <p>Este código, en cambio, realiza la suma de dos números de un dígito y muestra el resultado en la pantalla:</p>
+                <img src="../img/EjecucionSuma.png" alt="computador" width="645" height="427">
+            </div>
+            <div>
+                <img src="../img/8086.jpg" alt="computador" width="319" height="250">
+                
+            </div>
+        </article>
+        <article>
+            <div>
+                <h2>Unidad Aritmética Lógica</h2>
+                <p>La unidad aritmética lógica, también llamada mediante sus siglas en inglés ALU,es un circuito digital que realiza operaciones aritméticas y operaciones a nivel de bits a números enteros en base binaria. Una característica esencial de la ALU es que su circuito sigue una lógica combinatoria, que quiere decir que la salida deeste será una función pura de exclusivamente la entrada introducida. Esto significa, pues, que solamente lo que entre como entrada se usará para otorgar un elemento de salida. Las entradas, o inputs, de la ALU conforman la data con la que se va a operar, por lo que se llaman operandos.</p>
+                <p>El ALU también requiere de un opcode, que es un código clave que indica cuál operación realizará el ALU. Hay una salida, que contiene el resultado de la operación realizada con los operandos. Dependiendo del diseño del ALU, esta puede contener valores de estado de entrada, valores de estado de salida, o ambas. Estos valores otorgan información sobre la operación que se ha realizado con anterior, o una operación en curso.</p>
+                <p>Entendiendo esto, puede entenderse cómo se realiza la suma, la resta, la multiplicación y la división de los operandos:</p>
+                <p><span class="bold">Suma</span>: Debe entenderse que la suma de dos operandos es bajo el principio de que se realiza en la base binaria. Esta es, de hecho, la operación más sencilla de realizar, al requerirse dos puertas lógicas. Una puerta lógica XOR se encarga de la suma. Si los valores de cada bit evaluado son distintos, el bit resultante será 1; en caso contrario, cero. Para completar la suma, es necesario una última puerta lógica para que se ejecute un carreo a la siguiente cifra significativa, en caso de que los dos bits operados resultan ser 1. Esto es fácilmente realizable con una puerta lógica AND, que da como resultado 1 solamente para ese caso.</p>
+                <p><span class="bold">Resta</span>: La resta funciona de forma similar a la suma. Igualmente requiere de la puerta lógica XOR para evaluar si los operandos son diferentes o iguales. Debe entenderse que, si la resta o la suma es entre dos operadores iguales, el resultado de su resta lógicamente debe dar cero, pues es el resultado de restar 0 – 0 o 1 – 1, con la única salvedad de que en esta última operación debe realizarse igualmente un carreo gracias al operando AND. La diferencia con la suma radica en que el carreo se realiza hacia la anterior cifra significativa en vez de la siguiente.</p>
+                <p><span class="bold">Multiplicación</span>: La multiplicación tiene como objetivo el ser convertida en una suma, pues esencialmente se trata de esto. Para realizar la operación, debe realizarse la operación de multiplicación para cada bit del operando A al bit de menor cifra significativa del operando B, que es fácilmente realizable con una puerta lógica AND. Al terminar esto, se hace lo mismo para el siguiente bit del operando B, pero con la salvedad de que este mueve todos los bits resultantes una posición hacia la izquierda. En la siguiente iteración, se realiza lo mismo moviendo todos los bits dos posiciones hacia la izquierda. Así se realiza hasta realizar el cambio de posición de los bits resultantes i-veces, siendo i la cantidad de iteraciones realizadas, empezando desde el cero. Al obtener todos los bits resultantes, se realiza una suma de todos estos.</p>
+                <p><span class="bold">División</span>: La división es similar igualmente a la multiplicación, en el sentido de que también realiza desplazamiento de bits. Primero realiza la operación de multiplicación con el primer dígito que no exceda su cantidad con el divisor, igualmente realizable con el divisor, y tras ello se mueven los bits resultantes hasta estar a la par con el dígito con la mayor cifra significativa del dividendo y se realiza una resta ahí. Si hay un residuo y este es mayor que el divisor, se vuelve a realizar el procedimiento hasta que el residuo sea cero o menor al divisor.</p>
+            </div>
+            <div>
+                <img src="../img/ALU.png" alt="computador" width="300" height="257">
+            </div>
+        </article>
+        <article>
+            <div>
+                <h2>Línea de Comandos</h2>
+                <p>También llamada "consola" o "terminal", la línea de comandos es una de las herramientas más importantes de todo programador.</p>
+                <p>La línea de comandos es una aplicación que nos permite escribir y ejecutar comandos sobre el sistema operativo sin necesidad de usar el mouse.</p>
+                <p>Los comandos que pueden escribirse en la línea de comandos de Windows son los siguientes:</p>
+                <h3>Comandos internos</h3>
+                <p>Son los comandos que el mismo programa cmd.exe y command.com incluye de serie. Veamos algunos:</p>
+                <p><span class="bold">CD</span>: Este comando permite cambiar de directorio, especificando el nombre del directorio hacia donde se desea ubicar.</p>
+                <p><span class="bold">CLS</span>: Este comando limpia la terminal.</p>
+                <p><span class="bold">MKDIR</span>: Este comando crea directorios, especificando el nombre del directorio a crear.</p>
+                <p><span class="bold">DIR</span>: Este comando muestra la lista de directorios ubicados en la carpeta actual</p>
+                <h3>Comandos externos</h3>
+                <p>Son los comandos que no cumplen con las características de un comando interno. Programas independientes cuya interfaz existe en la línea de comandos. Veamos algunos:</p>
+                <p><span class="bold">CHKDSK</span>: Abre la herramienta que verifica la integridad del disco duro.</p>
+                <p><span class="bold">FC</span>: Compara el contenido de dos archivos</p>
+                <p><span class="bold">HELP</span>: Describe el funcionamiento de diversos comandos internos y externos</p>
+                <p><span class="bold">MOVE</span>: Mueve un archivo a un directorio especificado</p>
+            </div>
+            <div>
+                <img src="../img/command-line.png" alt="computador" width="300" height="257">
+            </div>
+        </article>
+    </main>     
+</body>
+</html>
